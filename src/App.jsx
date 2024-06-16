@@ -88,7 +88,7 @@ function ProductSection() {
             />
             <h3>Organic Green Tea</h3>
             <p className="product-price">79.99 Baht</p>
-            <Button buttonText="Add to Card"/>
+            <Button buttonText="Add to Card" buttonStyle="add-to-cart-button-secondary" />
           </div>
         </div>
       </div>
@@ -105,7 +105,7 @@ function Footer() {
 }
 
 function Button(props) {
-  return <button className="buttonStyle">{props.buttonText}</button>;
+  return <button className={props.buttonStyle}>{props.buttonText}</button>;
 }
 
 function App() {
